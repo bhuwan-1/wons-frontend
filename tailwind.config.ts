@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#2b656f",
       },
-    },
+      backgroundImage: {
+        login: "url('/assets/undraw_connection_re_lcud.svg')",
+        signup: "url('/assets/signin.svg')",
+        logo: "url('/assets/logo-no-background.png')",
+        back: "url('/assets/back.png')",
+      },
+      screens: {
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1300px',
+        '2xl': '1536px',
+      },
+    }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
