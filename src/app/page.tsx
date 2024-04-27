@@ -11,7 +11,7 @@ export default function Home() {
         <div className="w-full h-5/6 border-2 bg-white rounded-lg shadow-md flex ">
           <div className="w-1/2 hidden lg:flex justify-center items-center">
             <Image
-              src={require("../../public/assets/Mobile login-rafiki.png")}
+              src={require("../../public/assets/Mobile login-rafiki.svg")}
               width={200}
               height={200}
               alt="login"

@@ -14,7 +14,7 @@ const SignUp: React.FC = () => {
           </div>
           <div className="w-1/2 hidden lg:flex justify-center items-center">
             <Image
-              src={require("../../../public/assets/Mobile login-cuate.png")}
+              src={require("../../../public/assets/Mobile login-cuate.svg")}
               width={200}
               height={200}
               alt="login"
