@@ -120,9 +120,9 @@ const SignupForm = () => {
             >
               Create Account
             </button>
-            <p className="text-center font-medium text-lg">
+            <p className="text-center font-medium text-lg mt-4">
               Already have an account?{" "}
-              <Link href={"/"} className="underline text-primary">
+              <Link href={"/"} className="underline text-black ">
                 Login
               </Link>
             </p>

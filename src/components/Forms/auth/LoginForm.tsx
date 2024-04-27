@@ -2,6 +2,7 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import { LoginSchema } from "./validation";
 import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 import React from "react";
 import Link from "next/link";
@@ -61,7 +62,7 @@ const LoginForm = () => {
   return (
     <div className="w-full min-h-full p-5 space-y-4 flex justify-center flex-col">
       <h1 className="text-primary text-4xl text-center font-extrabold">
-        Login to WONS-JBPRS
+        Welcome Back
       </h1>
       {/* <p className="text-lg font-semibold text-left">Login to continue</p> */}
       <Formik
@@ -106,7 +107,8 @@ const LoginForm = () => {
                 className="text-red-600 font-medium text-sm tracking-wider"
               />
             </div>
-            <div className="w-full h-[300px] bg-[url('/assets/qr.png')] bg-no-repeat bg-center"></div>
+            {/* <div className=" h-[150px] w-[150px] bg-[url('/assets/qr.png')] bg-no-repeat bg-center"></div> */}
+<Image src={require("../../../../public/assets/qr.png")} alt="qr" width={150} height={150} className="mx-auto"/>
             <button
               type="submit"
               disabled={isSubmitting}

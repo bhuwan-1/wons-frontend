@@ -10,7 +10,19 @@ interface Rewards {
   status: string;
 }
 export default function Rewards() {
-  const { isLoading, error, rewards } = useRewards();
+  //const { isLoading, error, rewards } = useRewards();
+  const reward=[{id:1, title:'title', cost: 100, status:'Available'}
+  ,{id:2, title:'title', cost: 100, status:'Available'}
+  ,{id:3, title:'title', cost: 100, status:'Available'}
+  ,{id:4, title:'title', cost: 100, status:'Available'}
+  ,{id:5, title:'title', cost: 100, status:'Available'}
+  ,{id:6, title:'title', cost: 100, status:'Available'}
+  ,{id:7, title:'title', cost: 100, status:'Available'}
+  ,{id:8, title:'title', cost: 100, status:'Available'}
+  ,{id:9, title:'title', cost: 100, status:'Available'}
+  ,{id:10, title:'title', cost: 100, status:'Available'}
+  ]
+  const rewards = reward;
   console.log(rewards);
   return (
     <>
@@ -25,7 +37,7 @@ export default function Rewards() {
             />
           ))}
         </div>
-      {/* </div> */}
+      {/* l/div> */}
     </>
   );
 }

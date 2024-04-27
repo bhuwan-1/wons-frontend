@@ -12,13 +12,58 @@ interface Job {
   createdAt: string;
 }
 export default function Jobs() {
-  const { jobs } = useJobs();
+  // const { jobs } = useJobs();
+const jobs=[{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},
+{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+},{
+  id:1,
+  title:'Backend Developer',
+  description:'This is a role for an entry level candidate who has good knowledge of backend development. ',
+  points:100,
+  createdAt:'2022-06-03T21:00:00.000Z'
+}
+]
   return (
     <>
       <h1 className="text-center text-primary text-3xl font-bold mt-4">
         Complete Tasks to earn points!
       </h1>
-      <div className="h-90vh grid xl:grid-cols-4 xl:gap-2 lg:grid-cols-3 md:gird-cols-3 sm:grid-cols-2 sm:gap-2 p-4">
+      <div className="h-90vh grid xl:grid-cols-4 xl:w-[95%] xl:mx-auto xl:gap-y-3 xl:gap-x-10 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-10 p-10">
         {jobs.map((job: Job) => (
           <JobCard
             key={job.id}

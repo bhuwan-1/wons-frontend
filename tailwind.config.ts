@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#2b656f",
+        primary: "#307959",
       },
       backgroundImage: {
-        login: "url('/assets/undraw_connection_re_lcud.svg')",
+        login: "url('/assets/loginBG.png')",
         signup: "url('/assets/signin.svg')",
         logo: "url('/assets/logo-no-background.png')",
         back: "url('/assets/back.png')",
