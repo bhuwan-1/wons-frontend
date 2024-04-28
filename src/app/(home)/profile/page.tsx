@@ -94,9 +94,10 @@ const Profile = () => {
   ];
   return (
     <div className="p-4 overflow-auto">
-      <div className="w-full h-screen">
-        <div className="flex flex-col lg:flex-row justify-center items-stretch h-fit gap-3">
-          <div className="rounded-lg bg-[#f5f5f5ac]  min-h-[70vh] h-full p-4 lg:w-[600px] w-[90%] flex flex-col justify-stretch items-stretch ">
+      <div className="w-full h-full">
+        <div className="flex flex-col lg:flex-row justify-center items-stretch  gap-3">
+
+          <div className="rounded-lg bg-[#f5f5f5ac]  min-h-[70vh] p-4 lg:w-[600px] w-[90%] flex flex-col justify-stretch items-stretch ">
             <div className="avatar flex items-center justify-center h-full w-full p-4">
               <div className="w-[300px] h-[300px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img src={image} alt="profile" />
@@ -124,7 +125,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="lg:w-full min-h-[70vh] h-fit w-[90%] rounded-lg bg-[#f5f5f5ac] p-5">
+          <div className=" lg:w-full min-h-[70vh] h-fit w-[90%] rounded-lg bg-[#f5f5f5ac] p-5">
             <h1 className="text-center text-4xl font-bold p-4 text-primary">
               Claimed Rewards
             </h1>
@@ -142,6 +143,7 @@ const Profile = () => {
             </div>
           </div>
           
+
         </div>
       </div>
       {show && (
